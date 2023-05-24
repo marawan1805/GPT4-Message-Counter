@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "GPT-4 Message Tracker",
+  "version": "1.0",
+  "description": "Tracks the number of GPT-4 messages sent and resets the count every 3 hours or when 25 messages are reached.",
+  "permissions": ["webRequest", "webRequestBlocking", "storage", "<all_urls>"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "icons": {
+    "48": "icon.png"
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
